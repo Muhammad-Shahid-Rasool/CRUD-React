@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "zahid",
+      "username": "zahidsol",
+      "email": "zahid@gmail.com",
+      "phone": "8809890890",
+      "website": "zahidsol.com"
+    },
+    {
+      "id": 3,
+      "name": "Ayyan",
+      "username": "AyyanSb",
+      "email": "azyan@gmail.cmo",
+      "phone": "9090898790890",
+      "website": "wwww"
+    },
+    {
+      "id": 5,
+      "name": "Ali",
+      "username": "M.ALi",
+      "email": "Ali123@gmail.com",
+      "phone": "03124173511",
+      "website": "wwww.zahidso.com"
+    },
+    {
+      "id": 7,
+      "name": "Usman",
+      "username": "Ghani",
+      "email": "usman@gmail.com",
+      "phone": "2323232323",
+      "website": "www.usman@yahoo.com"
+    },
+    {
+      "name": "Hamza",
+      "username": "M.Hamza",
+      "email": "hamza@yahoo.com",
+      "phone": "323454565767",
+      "website": "www.hamza@yahoo.com",
+      "id": 9
+    },
+    {
+      "name": "hamid",
+      "username": "hamid",
+      "email": "hamid@yahoo.com",
+      "phone": "0923780472893",
+      "website": "ww.hamid@yahoo.com",
+      "id": 10
+    },
+    {
+      "name": "awais",
+      "username": "M.awais.R",
+      "email": "awaismu@gmail.com",
+      "phone": "03117638907",
+      "website": "www.awaismu@gmail.com",
+      "id": 11
+    }
+  ]
+}
