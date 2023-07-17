@@ -15,7 +15,7 @@ const Read = () => {
     loadUser();
   }, []);
   const loadUser = async () => {
-    const res = await axios.get(`http://localhost:3004/users/${id}`);
+    const res = await axios.get(`https://corsproxy.io/?https://usercrudapi.foodyfly.buzz/api/users/${id}`);
     setUser(res.data);
   };
   return (

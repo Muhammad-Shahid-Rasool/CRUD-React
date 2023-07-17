@@ -10,12 +10,12 @@ const Create = () => {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get(`http://localhost:3004/users`);
+    const result = await axios.get(`https://corsproxy.io/?https://usercrudapi.foodyfly.buzz/api/users`);
     setUser(result.data.reverse());
   };
 
   const deleteUser = async id => {
-    await axios.delete(`http://localhost:3004/users/${id}`);
+    await axios.post(`https://corsproxy.io/?https://usercrudapi.foodyfly.buzz/api/users-delete/${id}`);
     loadUsers();
   };
 

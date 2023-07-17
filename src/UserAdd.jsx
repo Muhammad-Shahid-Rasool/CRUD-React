@@ -1,9 +1,9 @@
 import axios from 'axios';
 import React, { useState } from 'react'
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const UserAdd = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const [user, setUser] = useState({
 
     name: "",
@@ -11,22 +11,22 @@ const UserAdd = () => {
     email: ""
   })
 
-  const { name, username, email,phone,website } = user;
+  const { name, username, email, phone, website } = user;
   const onInputChange = e => {
 
     setUser({ ...user, [e.target.name]: e.target.value })
   }
-     const onSubmit= async e =>{
-      e.preventDefault();
-      await axios.post(`http://localhost:3004/users`,user);
-     navigate("/")
-     }
+  const onSubmit = async e => {
+    e.preventDefault();
+    await axios.post(`https://corsproxy.io/?https://usercrudapi.foodyfly.buzz/api/users`, user);
+    navigate("/")
+  }
 
   return (
     <div className='countainer'>
       <div className='w-75 mx-auto shadow p-5'>
         <h2 className='text-center mb-4'>Add a User</h2>
-        <form onSubmit={e=> onSubmit(e)}>
+        <form onSubmit={e => onSubmit(e)}>
           <div className='form-group'>
             <input type="text" className='form-control form-control-lg' placeholder='Entre your Name' name='name' value={name} onChange={e => onInputChange(e)} />
 

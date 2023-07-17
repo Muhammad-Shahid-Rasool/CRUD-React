@@ -23,12 +23,12 @@ const Edit = () => {
        },[])
      const onSubmit= async e =>{
       e.preventDefault();
-      await axios.put(`http://localhost:3004/users/${id}`, user);
+      await axios.post(`https://corsproxy.io/?https://usercrudapi.foodyfly.buzz/api/users-update/${id}`, user);
      navigate("/")
      }
      
      const loadUser = async () => {
-      const result = await axios.get(`http://localhost:3004/users/${id}`);
+      const result = await axios.get(`https://corsproxy.io/?https://usercrudapi.foodyfly.buzz/api/users/${id}`);
       setUser(result.data);
     };
 
